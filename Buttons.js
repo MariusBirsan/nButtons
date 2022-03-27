@@ -4,10 +4,8 @@ function randomButton(totalB) {
     	return Math.floor(Math.random() * totalB);
 }
 
-function isWinner(valueOfButton) {
-   	console.log(valueOfButton.target.id);
-    	let chosenButton = valueOfButton.target.id;
-    	console.log(chosenButton);
+function isWinner(selectedButton) {
+    	let chosenButton = selectedButton.target.id;
     	if (chosenButton == winningButton) {
        		message.innerHTML = "You selected the winner button!"
     	} else {
